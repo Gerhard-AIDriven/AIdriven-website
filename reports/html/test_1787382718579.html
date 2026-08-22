@@ -475,8 +475,8 @@
         
         <div class="data-card">
           <h3>🌊 Liquefaction Risk</h3>
-          <p style="margin-bottom: 15px;">This area has moderate to high liquefaction risk due to sandy/gravelly soils typical of the Heretaunga Plains. Liquefaction can occur during earthquakes when water-saturated soils lose strength.</p>
-          <span class="status-badge status-danger">Moderate to High Risk</span>
+          <p style="margin-bottom: 15px;">This area has low to moderate liquefaction risk. Local soil conditions should be assessed for specific properties.</p>
+          <span class="status-badge status-success">Low to Moderate Risk</span>
         </div>
         
         
@@ -536,7 +536,7 @@
   
   <script>
     // Initialize map
-    const map = L.map('map').setView([-39.49003415, 176.91958813], 15);
+    const map = L.map('map').setView([-39.4928, 176.912], 15);
     
     // Base layers
     const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
@@ -551,7 +551,7 @@
     satelliteLayer.addTo(map);
     
     // Property marker
-    L.marker([-39.49003415, 176.91958813])
+    L.marker([-39.4928, 176.912])
       .addTo(map)
       .bindPopup('<strong>70 Marine Parade, Napier South, Napier, 4110</strong><br>Subject Property')
       .openPopup();
